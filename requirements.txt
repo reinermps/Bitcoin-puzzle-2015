@@ -1,0 +1,6 @@
+base58==2.1.1
+cffi==1.15.1
+pycparser==2.21
+pycryptodome==3.17
+secp256k1==0.14.0
+tqdm==4.65.0
