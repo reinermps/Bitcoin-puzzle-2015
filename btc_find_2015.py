@@ -15,7 +15,7 @@ if os.path.exists("lastiteration.txt") and os.path.getsize("lastiteration.txt") 
         private_key_hex = f.read().strip()
         private_key_int = int(private_key_hex, 16)
 else:
-    private_key_int = int.from_bytes(bytes.fromhex("000000000000000000000000000000000000000000000001a838b13505b26857"), byteorder='big')
+    private_key_int = int.from_bytes(bytes.fromhex("0000000000000000000000000000000000000000000000020000000000000000"), byteorder='big')
 
 private_key = secp256k1.PrivateKey(private_key_int.to_bytes(32, byteorder='big'))
 
